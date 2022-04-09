@@ -1,0 +1,30 @@
+.tools-feature-card {
+  width: 100%;
+  display: flex;
+  padding: 32px;
+  align-items: center;
+  flex-direction: column;
+}
+.tools-container {
+  flex: 0 0 auto;
+  width: auto;
+  height: 48px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.tools-image {
+  width: 100px;
+  object-fit: cover;
+}
+.tools-text {
+  margin: var(--dl-space-space-unit);
+  font-style: normal;
+  text-align: center;
+  font-weight: 500;
+  padding-top: var(--dl-space-space-doubleunit);
+}
+
+
+
+
