@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tushig Bat-Erdene · Senior System Validation Engineer</title>
+<meta name="description" content="Senior System Validation Engineer in Budapest: ECU test automation, CANoe/CANape, Python frameworks, and research on out-of-distribution detection in image captioning.">
+<meta property="og:title" content="Tushig Bat-Erdene · Senior System Validation Engineer">
+<meta property="og:description" content="ECU validation, test automation and deep learning research. Publication and thesis on out-of-distribution detection.">
+<meta property="og:type" content="profile">
+<meta name="theme-color" content="#050912">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;500;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef2f7;--surf:#fff;--s2:#e4eaf2;--ink:#0d1726;--mute:#4d5d73;--line:#c3cedc;--acc:#007c8f;--amb:#b4580a;--ok:#12805c;--bad:#b3261e;--glow:rgba(0,124,143,.14);color-scheme:light;
+--d:'Sora','Inter',system-ui,sans-serif;--b:'Inter',system-ui,sans-serif;--m:'IBM Plex Mono',ui-monospace,Menlo,monospace;--rail:84px;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#050912;--surf:#0b1322;--s2:#101b30;--ink:#e6eefb;--mute:#8ea0ba;--line:#1c2b46;--acc:#3ee0f5;--amb:#ffb454;--ok:#4be3a8;--bad:#ff6b6b;--glow:rgba(62,224,245,.16);color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#050912;--surf:#0b1322;--s2:#101b30;--ink:#e6eefb;--mute:#8ea0ba;--line:#1c2b46;--acc:#3ee0f5;--amb:#ffb454;--ok:#4be3a8;--bad:#ff6b6b;--glow:rgba(62,224,245,.16);color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.65 var(--b);-webkit-font-smoothing:antialiased}
+a{color:var(--acc);text-decoration:none}a:hover{text-decoration:underline}
+:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+.rail{position:fixed;z-index:20;left:0;top:0;bottom:0;width:var(--rail);border-right:1px solid var(--line);background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(12px);display:flex;flex-direction:column;justify-content:space-between;align-items:center;padding:calc(18px + env(safe-area-inset-top,0px)) 0 18px}
+.rail .lg{font:500 .8rem var(--m);color:var(--ink);writing-mode:vertical-rl;transform:rotate(180deg);letter-spacing:.08em}
+.rail ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.rail ol a{display:block;font:400 .78rem var(--m);color:var(--mute);padding:9px 10px;border-left:2px solid transparent;text-align:center}
+.rail ol a:hover{text-decoration:none;color:var(--ink)}
+.rail ol a.on{color:var(--acc);border-left-color:var(--acc);background:var(--glow)}
+.tb{background:none;border:1px solid var(--line);color:var(--ink);width:36px;height:36px;border-radius:50%;cursor:pointer}
+main{margin-left:var(--rail)}
+.pad{padding:0 clamp(18px,5vw,64px)}
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;border-bottom:1px solid var(--line)}
+.hero canvas{position:absolute;inset:0;width:100%;height:100%}
+.hero .in{position:relative;padding-top:120px;padding-bottom:28px}
+.ch{font:400 .8rem var(--m);color:var(--acc)}
+h1{font:700 clamp(3rem,11vw,9rem)/.9 var(--d);letter-spacing:-.05em;margin:14px 0 20px}
+h1 span{display:block;color:transparent;-webkit-text-stroke:1.5px var(--acc)}
+.lead{max-width:54ch;color:var(--mute);font-size:clamp(1rem,1.8vw,1.2rem);margin:0 0 28px}.lead b{color:var(--ink);font-weight:500}
+.ro{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));border:1px solid var(--line);background:color-mix(in srgb,var(--surf) 88%,transparent);backdrop-filter:blur(8px)}
+.ro div{padding:12px 16px;border-right:1px solid var(--line);font:400 .74rem var(--m);color:var(--mute)}
+.ro b{display:block;font:500 .95rem var(--m);color:var(--ink)}.ro .p{color:var(--ok)}
+/* sections */
+.sec{padding:clamp(64px,9vw,120px) 0;border-bottom:1px solid var(--line)}
+.hd{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap;margin-bottom:34px}
+h2{font:700 clamp(2rem,5vw,3.6rem)/1 var(--d);letter-spacing:-.04em;margin:0}
+.panel{position:relative;background:var(--surf);padding:clamp(22px,3.5vw,44px)}
+.panel::before,.panel::after{content:"";position:absolute;width:18px;height:18px;border:2px solid var(--acc)}
+.panel::before{top:-1px;left:-1px;border-right:0;border-bottom:0}.panel::after{bottom:-1px;right:-1px;border-left:0;border-top:0}
+/* publication */
+.pub{display:grid;grid-template-columns:1fr minmax(260px,.55fr);gap:0;border:1px solid var(--line)}
+.pub .l{padding:clamp(22px,3.5vw,44px)}
+.pub h3{font:500 clamp(1.5rem,3vw,2.4rem)/1.2 var(--d);letter-spacing:-.025em;margin:12px 0 18px}
+.pub p{color:var(--mute);max-width:56ch;margin:0 0 24px}
+.spec{margin:0;background:var(--s2);border-left:1px solid var(--line);display:flex;flex-direction:column}
+.spec div{padding:14px 22px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:14px;font:400 .82rem var(--m)}
+.spec div:last-child{border:0;margin-top:auto}.spec dt{color:var(--mute)}.spec dd{margin:0;text-align:right}
+.btn{display:inline-block;padding:12px 20px;border:1px solid var(--acc);color:var(--acc);font:500 .85rem var(--m);transition:.2s}
+.btn:hover{background:var(--acc);color:var(--bg);text-decoration:none}
+@media(max-width:860px){.pub{grid-template-columns:1fr}.spec{border-left:0;border-top:1px solid var(--line)}}
+/* thesis */
+.th{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(24px,5vw,72px)}
+.th h3{font:500 clamp(1.4rem,2.6vw,2rem)/1.2 var(--d);letter-spacing:-.02em;margin:10px 0 16px}
+.th p{color:var(--mute);margin:0 0 14px}
+.stages{display:flex;flex-direction:column;border:1px solid var(--line)}
+.stages button{all:unset;cursor:pointer;display:grid;grid-template-columns:44px 1fr;align-items:center;padding:14px 16px;border-bottom:1px solid var(--line);font:500 .95rem var(--d);color:var(--mute);transition:.2s}
+.stages button:focus-visible{outline:2px solid var(--acc);outline-offset:-2px}
+.stages button i{font:400 .74rem var(--m);font-style:normal;color:var(--acc)}
+.stages button[aria-selected=true]{background:var(--glow);color:var(--ink);box-shadow:inset 3px 0 var(--acc)}
+.read{padding:20px 22px;background:var(--s2);min-height:128px;font-size:.95rem;color:var(--mute)}
+.read b{display:block;font:500 1rem var(--d);color:var(--ink);margin-bottom:6px}
+.gate{margin-top:40px;border:1px dashed var(--line);padding:clamp(18px,3vw,30px)}
+.gate h4{font:500 1.05rem var(--d);margin:0 0 4px}.gate small{font:400 .75rem var(--m);color:var(--mute)}
+.gate .row{display:flex;align-items:center;gap:16px;margin:18px 0;font:400 .85rem var(--m)}
+.gate input{flex:1;accent-color:var(--acc);min-width:0}
+.cap{display:grid;grid-template-columns:64px 1fr auto;gap:14px;align-items:center;padding:10px 0;border-top:1px solid var(--line);font-size:.92rem;transition:.25s}
+.cap code{font:400 .82rem var(--m);color:var(--mute)}.cap em{font:500 .75rem var(--m);font-style:normal}
+.cap.k em{color:var(--ok)}.cap.r{opacity:.55}.cap.r em{color:var(--bad)}.cap.r span{text-decoration:line-through}
+@media(max-width:860px){.th{grid-template-columns:1fr}}
+.ov{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px;margin-top:44px}.ov div{border-top:2px solid var(--acc);padding-top:12px}.ov h4{font:500 1rem var(--d);margin:0 0 6px}.ov p{margin:0;font-size:.93rem;color:var(--mute)}
+.gt{display:grid;grid-template-columns:minmax(220px,.8fr) 1.2fr;gap:clamp(18px,3vw,34px);align-items:start}
+.gt svg.img{width:100%;height:auto;display:block;border:1px solid var(--line)}.gt figcaption{font:400 .78rem var(--m);color:var(--mute);margin-top:8px}.gt figure{margin:0}
+.charts{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:28px}.chart{border:1px solid var(--line);background:var(--s2);padding:14px}.chart h5{font:500 .9rem var(--d);margin:0 0 8px}.chart svg{width:100%;height:auto;display:block}
+#cs{margin:16px 0 0;font:400 .82rem var(--m);color:var(--ink)}
+.tools{display:flex;flex-direction:column;gap:8px}#lang{font:500 .72rem var(--m)}
+#bg{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}.hero{background:var(--bg);z-index:1}.sec,footer{position:relative;z-index:1}
+button.btn{background:none;cursor:pointer;margin-left:8px}
+.can{margin-top:44px;border:1px dashed var(--line);padding:clamp(18px,3vw,30px)}.can h3{font:500 1.05rem var(--d);margin:0 0 4px}.can small{font:400 .75rem var(--m);color:var(--mute)}
+.sg{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}.sg button{all:unset;cursor:pointer;padding:8px 14px;border:1px solid var(--line);font:400 .8rem var(--m);color:var(--mute)}.sg button:focus-visible{outline:2px solid var(--acc)}.sg button[aria-pressed=true]{border-color:var(--acc);color:var(--acc);background:var(--glow)}
+.cw{display:flex;gap:28px;flex-wrap:wrap;align-items:flex-start}#bits{display:grid;grid-template-columns:repeat(8,1fr);gap:3px;width:min(100%,300px)}
+.bit{display:block;aspect-ratio:1;border:1px solid var(--line);background:var(--s2)}.bit.on{background:var(--mute)}.bit.sel{border-color:var(--acc)}.bit.sel.on{background:var(--acc)}
+#hexo{font:500 .9rem var(--m);word-break:break-all}.can .row{display:flex;align-items:center;gap:16px;margin:14px 0;font:400 .85rem var(--m)}.can input{flex:1;min-width:0;accent-color:var(--acc)}
+@media(max-width:860px){.gt,.charts{grid-template-columns:1fr}}
+/* log */
+.log details{border-top:1px solid var(--line)}.log details:last-child{border-bottom:1px solid var(--line)}
+.log summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:170px 1fr auto;gap:18px;align-items:baseline;padding:20px 0}
+.log summary::-webkit-details-marker{display:none}
+.log time{font:400 .8rem var(--m);color:var(--amb)}
+.log h3{font:500 1.15rem/1.3 var(--d);margin:0}.log h3 small{display:block;font:400 .85rem var(--m);color:var(--mute);margin-top:2px}
+.log summary::after{content:"+";font:400 1.4rem var(--m);color:var(--acc)}.log details[open] summary::after{content:"–"}
+.log ul{margin:0 0 22px 188px;padding-left:18px;color:var(--mute)}.log li{margin-bottom:6px}
+@media(max-width:700px){.log summary{grid-template-columns:1fr auto}.log time{grid-column:1/-1}.log ul{margin-left:0}}
+/* stack */
+.bom div{display:grid;grid-template-columns:200px 1fr;gap:18px;padding:16px 0;border-top:1px solid var(--line)}
+.bom div:last-child{border-bottom:1px solid var(--line)}
+.bom dt{font:400 .8rem var(--m);color:var(--acc)}.bom dd{margin:0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,64px);margin-top:44px;color:var(--mute)}
+.two h3{font:500 1rem var(--d);color:var(--ink);margin:0 0 10px}.two p,.two ul{margin:0;padding-left:0;list-style:none}.two li{padding:4px 0}
+@media(max-width:700px){.bom div{grid-template-columns:1fr;gap:4px}.two{grid-template-columns:1fr}}
+footer{padding:clamp(64px,9vw,120px) 0 120px}
+footer a.big{display:block;font:700 clamp(1.5rem,5.5vw,4rem)/1.1 var(--d);letter-spacing:-.04em;word-break:break-all;margin:12px 0 26px}
+footer nav{display:flex;gap:22px;flex-wrap:wrap;font:400 .85rem var(--m)}
+@media(max-width:720px){:root{--rail:0px}
+.rail{top:auto;right:0;width:auto;height:calc(58px + env(safe-area-inset-bottom,0px));flex-direction:row;border-right:0;border-top:1px solid var(--line);padding:0 12px env(safe-area-inset-bottom,0px)}
+.rail .lg{display:none}.rail ol{flex-direction:row;gap:0;flex:1;justify-content:space-around}.rail ol a{border-left:0;border-top:2px solid transparent;padding:16px 8px}.rail ol a.on{border-top-color:var(--acc)}
+.hero .in{padding-top:80px}.tools{flex-direction:row}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<canvas id="bg" aria-hidden="true"></canvas>
+<aside class="rail"><span class="lg">&lt;tushig/&gt;</span>
+<ol id="ch"><li><a href="#ch1" class="on">CH1</a></li><li><a href="#ch2">CH2</a></li><li><a href="#ch3">CH3</a></li><li><a href="#ch4">CH4</a></li><li><a href="#ch5">CH5</a></li></ol>
+<!--<div class="tools"><button class="tb" id="lang" aria-label="Switch to Mongolian">МН</button>--><button class="tb" id="theme" aria-label="Toggle light and dark theme">◐</button></div></aside>
+
+<main>
+<section class="hero" id="ch1" aria-label="Introduction">
+<canvas id="cv" aria-hidden="true"></canvas>
+<div class="in pad">
+<div class="ch">CH1 · signal under test</div>
+<h1>Tushig<span>Bat-Erdene</span></h1>
+<p class="lead"><b>Senior system validation engineer</b> at thyssenkrupp Components Technology, Budapest. I build the tools and test infrastructure that prove automotive hardware meets its specification, and I research how to make deep learning models catch their own mistakes.</p>
+<div class="ro"><div>Time base<b>2 ms/div</b></div><div>Tolerance<b>±12%</b></div><div>Standard<b>Automotive</b></div><div>Verdict<b class="p" id="vd">PASS</b></div></div>
+</div></section>
+
+<section class="sec" id="ch2"><div class="pad">
+<div class="hd"><span class="ch">CH2</span><h2>Publication</h2></div>
+<article class="pub">
+<div class="l"><span class="ch">Peer-reviewed · Infocommunications Journal</span>
+<h3>On the Quality of Experience of Content Sharing in Online Education and Online Meetings</h3>
+<p>A study of how well shared content such as slides and screens comes across in online lessons and meetings, and how that experience can be measured.</p>
+<a class="btn" href="https://doi.org/10.36244/ICJ.2022.2.8" target="_blank" rel="noopener">Open paper (DOI)</a><button class="btn" id="cite" type="button">Copy citation</button><span id="cok" style="font:400 .78rem var(--m);color:var(--ok);margin-left:10px"></span></div>
+<dl class="spec"><div><dt>Journal</dt><dd>Infocommunications Journal</dd></div><div><dt>Volume</dt><dd>XIV</dd></div><div><dt>Issue</dt><dd>2</dd></div><div><dt>Date</dt><dd>June 2022</dd></div><div><dt>Pages</dt><dd>73–84</dd></div><div><dt>DOI</dt><dd>10.36244/ICJ.2022.2.8</dd></div></dl>
+</article></div></section>
+
+<section class="sec" id="ch3"><div class="pad">
+<div class="hd"><span class="ch">CH3</span><h2>Thesis</h2></div>
+<div class="panel"><div class="th">
+<div><span class="ch">BME bachelor thesis</span>
+<h3>Out-of-Distribution Detection in Image Captioning based on Deep Learning</h3>
+<p>Large captioning models sometimes describe things that are not in the image. I implemented ReCap (Refining Captions for Foundation Model-Based Image Captioning), which rejects out-of-distribution captions and replaces them with better alternatives.</p>
+<p>Select a stage to see what I built.</p></div>
+<div><div class="stages" role="tablist" aria-label="ReCap stages" id="st"></div><div class="read" id="rd" role="tabpanel" aria-live="polite"></div></div>
+</div>
+<div class="ov"><div><h4>The problem</h4><p>Large foundation-model captioners can write captions that do not match what is in the image. These out-of-distribution (OOD) captions look fluent, so they are hard to spot.</p></div><div><h4>The idea</h4><p>Softmax probability only reflects how the model ranks its own words. A CLIP similarity score compares the caption with the image directly, so it can flag a caption that does not belong.</p></div><div><h4>What I delivered</h4><p>An OOD benchmark built with Stable Diffusion-based models, large captioners integrated into the pipeline, a CLIP-based scoring solution, and the ReCap reject-and-replace algorithm.</p></div></div>
+<div class="gate"><h4>Try the gate</h4><small>Illustrative image and scores, not results from the thesis.</small>
+<div class="row"><label for="th">CLIP threshold</label><input id="th" type="range" min="5" max="35" value="20"><output id="tv">0.20</output></div>
+<div class="gt"><figure><svg class="img" viewBox="0 0 300 200" role="img" aria-label="Illustration of a dog running on a beach"><defs><linearGradient id="sk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6b26b"/><stop offset="1" stop-color="#ffe3b8"/></linearGradient></defs><rect width="300" height="200" fill="url(#sk)"/><circle cx="235" cy="62" r="22" fill="#fff4d6"/><rect y="96" width="300" height="46" fill="#3a8fb7"/><path d="M0 104q25-6 50 0t50 0 50 0 50 0 50 0 50 0v6H0z" fill="#9bd1e6" opacity=".6"/><rect y="142" width="300" height="58" fill="#e8c98f"/><ellipse cx="152" cy="176" rx="40" ry="5" fill="#b99a5e" opacity=".6"/><g fill="#5a3a1e"><ellipse cx="150" cy="156" rx="32" ry="13"/><circle cx="187" cy="143" r="11"/><ellipse cx="197" cy="147" rx="7" ry="5"/><path d="M181 134l-3 12 9-4z"/><path d="M118 152q-16-14-20-20 8 2 22 12z"/></g><g stroke="#5a3a1e" stroke-width="5" stroke-linecap="round"><path d="M135 164l-12 14M162 166l10 12M172 162l12 10M128 162l-14 8"/></g><circle cx="190" cy="141" r="1.6" fill="#fff"/></svg><figcaption>Input image: a dog running on a beach</figcaption></figure>
+<div><div style="font:400 .78rem var(--m);color:var(--mute);margin-bottom:6px">Candidate captions from the model</div><div id="caps"></div><p id="cs"></p></div></div>
+<div class="charts"><div class="chart"><h5>Score distributions (illustrative)</h5><svg id="c1" viewBox="0 0 400 190"></svg></div><div class="chart"><h5>Threshold trade-off (illustrative)</h5><svg id="c2" viewBox="0 0 400 190"></svg></div></div></div>
+</div></div></section>
+
+<section class="sec" id="ch4"><div class="pad">
+<div class="hd"><span class="ch">CH4</span><h2>Event log</h2></div>
+<div class="log">
+<details open><summary><time>01/2026 – now</time><h3>Senior System Validation Engineer<small>thyssenkrupp Components Technology Hungary · Budapest</small></h3></summary>
+<ul><li>Engineered robust object-oriented Python frameworks to automate complex ECU test sequences, significantly reducing manual validation cycles and increasing testing throughput.</li><li>Developed automation scripts utilizing Vector CASL (Calculation and Scripting Language) to streamline signal-oriented calculations, log data analysis, and validation workflows.</li><li>Executed comprehensive automotive systems validation and signal analysis, translating complex functional requirements into reproducible, automated test scripts.</li><li>Collaborated cross-functionally to debug, analyze, and refine embedded ECU software performance against strict automotive standards.</li></ul></details>
+<details><summary><time>09/2024 – 12/2025</time><h3>System Validation Engineer<small>thyssenkrupp Components Technology Hungary · Budapest</small></h3></summary>
+<ul><li>Develop and maintain reusable scripts and tools for system verification and validation.</li><li>Co-architect the test infrastructure system.</li><li>Run hardware and system-level testing against customer specifications to automotive quality standards.</li></ul></details>
+<details><summary><time>11/2022 – 09/2024</time><h3>Software Engineering Intern<small>thyssenkrupp Components Technology Hungary · Budapest</small></h3></summary>
+<ul><li>Built Python tools used by the whole hardware department, tuned for large measurement files.</li><li>Led the Python 2 to Python 3 migration of engineering tools with minimal disruption for users.</li><li>Introduced test-driven development to the hardware engineering team.</li><li>Developing a centralized GitLab package repository for uniform dependencies.</li></ul></details>
+<details><summary><time>01/2018 – 09/2018</time><h3>CMS Developer<small>Nomun Khet LLC · Ulaanbaatar, Mongolia</small></h3></summary>
+<ul><li>Integrated third-party APIs and plugins into websites.</li><li>Extended e-commerce, payments, SEO and social features through plugin customization.</li></ul></details>
+</div></div></section>
+
+<section class="sec" id="ch5"><div class="pad">
+<div class="hd"><span class="ch">CH5</span><h2>Toolchain</h2></div>
+<dl class="bom" style="margin:0">
+<div><dt>Automotive and ECU</dt><dd>CANape, CANoe, Vector CASL, FlexRay, CAN, ECU test automation, signal analysis, log data analysis, requirements-based validation, embedded ECU debugging</dd></div>
+<div><dt>Languages</dt><dd>Python, SQL, C, Bash</dd></div>
+<div><dt>Infrastructure</dt><dd>Linux/Unix (User level), CISCO CCNA</dd></div>
+<div><dt>Tooling and data</dt><dd>Git and GitHub, GitLab, Subversion, PostgreSQL, Oracle, REST, SOAP</dd></div>
+<div><dt>Deep learning</dt><dd>TensorFlow, PyTorch, OpenCV, CLIP, Stable Diffusion</dd></div></dl>
+<div class="can"><h3>CAN frame decoder</h3><small>Illustrative frame, Intel byte order. Pick a signal and move the slider.</small><div class="sg" id="sg"></div><div class="cw"><div id="bits" aria-hidden="true"></div><div style="flex:1;min-width:220px"><div id="hexo"></div><div class="row"><input id="cv2" type="range" min="0" value="0" aria-label="Raw signal value"><output id="cvo"></output></div></div></div></div>
+<div class="two"><div><h3>Education</h3><p>B.Sc. Computer Engineering, Infocommunication specialization<br>Budapest University of Technology and Economics, 2020–2024</p></div>
+<div><h3>Honours</h3><ul><li>Stipendium Hungaricum Scholarship</li><li>Allianz Technology Hungary Tech Championship Award</li><li>IDEAHACK 2020, WHU hackathon</li></ul></div></div>
+</div></section>
+
+<footer><div class="pad"><span class="ch">Send signal</span>
+<a class="big" href="mailto:tushig7012@gmail.com">tushig7012@gmail.com</a>
+<nav><a href="https://github.com/tushig0826" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/betushig/" target="_blank" rel="noopener">LinkedIn</a><span style="color:var(--mute)">Budapest, Hungary</span></nav></div></footer>
+</main>
+
+<script>
+(function(){
+var R=document.documentElement,$=function(i){return document.getElementById(i)};
+$('theme').onclick=function(){var d=R.dataset.theme?R.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches;R.dataset.theme=d?'light':'dark'};
+/* scroll spy */
+var links=[].slice.call(document.querySelectorAll('#ch a'));
+new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})})},{rootMargin:'-45% 0px -50% 0px'}).observe&&
+(function(o){['ch1','ch2','ch3','ch4','ch5'].forEach(function(i){o.observe($(i))})})(new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})})},{rootMargin:'-45% 0px -50% 0px'}));
+/* stages */
+var SE=[['Benchmark','Prepared a complex dataset that measures out-of-distribution instances, built with Stable Diffusion-based models.'],['Caption','Integrated large image captioning models, initially GIT, to improve the quality and coherence of generated captions.'],['Score','Evaluated image and caption pairs with CLIP similarity scores instead of relying on softmax probability.'],['Reject and replace','ReCap rejects the out-of-distribution captions and swaps them for better alternatives, keeping captions visually coherent.'],['Segment (ongoing)','Integrating segmentation models to segment objects in images and tokenize matching caption elements for more precise image-to-caption matching.']];
+var st=$('st'),rd=$('rd'),cur=0,lg='en',S=SE,CM=['Далайн эрэг дагуу гүйж буй нохой','Элсэн дээр тоглож буй бор нохой','Улаан хоёр давхар автобус','Цастай уулын зам'];
+function build(){st.innerHTML='';S.forEach(function(s,i){var b=document.createElement('button');b.setAttribute('role','tab');b.innerHTML='<i>0'+(i+1)+'</i><span>'+s[0]+'</span>';b.onclick=function(){sel(i)};st.appendChild(b)});sel(cur)}
+function sel(i){cur=i;[].forEach.call(st.children,function(b,j){b.setAttribute('aria-selected',j===i)});rd.innerHTML='<b>'+S[i][0]+'</b>'+S[i][1]}
+build();
+/* gate */
+var C=[['a dog running along the shore',.31],['a brown dog playing in the sand',.27],['a red double-decker bus',.11],['a snowy mountain road',.07]],caps=$('caps');
+function gate(){var t=$('th').value/100;$('tv').textContent=t.toFixed(2);caps.innerHTML=C.map(function(c,i){var k=c[1]>=t;return '<div class="cap '+(k?'k':'r')+'"><code>'+c[1].toFixed(2)+'</code><span>'+(lg==='mn'?CM[i]:c[0])+'</span><em>'+(k?(lg==='mn'?'ХАДГАЛНА':'KEEP'):(lg==='mn'?'ТАТГАЛЗАНА':'REJECT'))+'</em></div>'}).join('')}
+function Phi(z){var s=z<0?-1:1;z=Math.abs(z)/Math.SQRT2;var q=1/(1+.3275911*z),y=1-(((((1.061405429*q-1.453152027)*q)+1.421413741)*q-.284496736)*q+.254829592)*q*Math.exp(-z*z);return .5*(1+s*y)}
+function pdf(v,m,s){return Math.exp(-.5*Math.pow((v-m)/s,2))/(s*2.5066)}
+function plot(id,fs,ymax,t,yl){var w=400,h=190,L=30,B=26,T=10,Rr=10,X=function(v){return L+v/.4*(w-L-Rr)},Y=function(v){return h-B-v/ymax*(h-B-T)},o='<g stroke="'+v('--line')+'" fill="none"><path d="M'+L+' '+T+'V'+(h-B)+'H'+(w-Rr)+'"/></g>';
+fs.forEach(function(f){var d='';for(var u=0;u<=.4001;u+=.004)d+=(d?'L':'M')+X(u).toFixed(1)+' '+Y(f.f(u)).toFixed(1);o+='<path d="'+d+'" fill="none" stroke="'+v(f.c)+'" stroke-width="2"/>'+(f.fill?'<path d="'+d+'L'+X(.4)+' '+Y(0)+'L'+X(0)+' '+Y(0)+'z" fill="'+v(f.c)+'" opacity=".14"/>':'')});
+o+='<line x1="'+X(t)+'" x2="'+X(t)+'" y1="'+T+'" y2="'+(h-B)+'" stroke="'+v('--amb')+'" stroke-width="1.5" stroke-dasharray="4 3"/>';
+o+='<g font-family="IBM Plex Mono" font-size="9" fill="'+v('--mute')+'"><text x="'+L+'" y="'+(h-8)+'">0</text><text x="'+X(.2)+'" y="'+(h-8)+'" text-anchor="middle">'+(lg==='mn'?'CLIP ижил төстэй байдал':'CLIP similarity')+'</text><text x="'+(w-Rr)+'" y="'+(h-8)+'" text-anchor="end">0.40</text><text x="'+(L+4)+'" y="'+(T+8)+'">'+yl+'</text></g>';$(id).innerHTML=o}
+function charts(){var t=$('th').value/100,rj=Phi((t-.13)/.05),kp=1-Phi((t-.28)/.05);
+plot('c1',[{f:function(u){return pdf(u,.28,.05)},c:'--ok',fill:1},{f:function(u){return pdf(u,.13,.05)},c:'--bad',fill:1}],8.6,t,lg==='mn'?'нягт':'density');
+plot('c2',[{f:function(u){return Phi((u-.13)/.05)},c:'--bad'},{f:function(u){return 1-Phi((u-.28)/.05)},c:'--ok'}],1.05,t,lg==='mn'?'эзлэх хувь':'share');
+$('cs').innerHTML=lg==='mn'?t.toFixed(2)+' үед: OOD тайлбарын '+Math.round(rj*100)+'%-ийг татгалзаж, тохирох тайлбарын '+Math.round(kp*100)+'%-ийг үлдээнэ.':'At '+t.toFixed(2)+': rejects '+Math.round(rj*100)+'% of OOD captions, keeps '+Math.round(kp*100)+'% of matching ones.'}
+function all(){gate();charts()}
+$('th').oninput=all;all();addEventListener('resize',charts);matchMedia('(prefers-color-scheme:dark)').addEventListener('change',function(){setTimeout(charts,50)});$('theme').addEventListener('click',function(){setTimeout(charts,50)});
+/* scope */
+var c=$('cv'),x=c.getContext('2d'),t=0,W,H,dp,still=matchMedia('(prefers-reduced-motion:reduce)').matches,vd=$('vd');
+function v(n){return getComputedStyle(R).getPropertyValue(n).trim()}
+function size(){dp=devicePixelRatio||1;W=c.clientWidth;H=c.clientHeight;c.width=W*dp;c.height=H*dp;x.setTransform(dp,0,0,dp,0,0);draw()}
+function draw(){x.clearRect(0,0,W,H);var ln=v('--line'),acc=v('--acc'),mid=H*.36,amp=H*.12;
+x.strokeStyle=ln;x.lineWidth=1;x.globalAlpha=.7;
+for(var g=0;g<W;g+=W/12){x.beginPath();x.moveTo(g,0);x.lineTo(g,H);x.stroke()}
+for(g=0;g<H;g+=H/8){x.beginPath();x.moveTo(0,g);x.lineTo(W,g);x.stroke()}
+x.globalAlpha=1;x.setLineDash([4,7]);x.beginPath();x.moveTo(0,mid-amp*1.15);x.lineTo(W,mid-amp*1.15);x.moveTo(0,mid+amp*1.15);x.lineTo(W,mid+amp*1.15);x.stroke();x.setLineDash([]);
+[[.5,.35],[1,1]].forEach(function(p){x.beginPath();for(var i=0;i<=W;i+=2){var q=(i+t*p[0])/90,y=mid-(Math.sin(q)*.78+Math.sin(q*3.1)*.16+Math.sin(q*7.3+t/80)*.04)*amp;i?x.lineTo(i,y):x.moveTo(i,y)}
+x.globalAlpha=p[1];x.shadowColor=acc;x.shadowBlur=p[1]>.5?14:0;x.strokeStyle=acc;x.lineWidth=p[1]>.5?2.4:1.2;x.stroke()});
+x.globalAlpha=1;x.shadowBlur=0}
+function loop(){t+=1.5;draw();requestAnimationFrame(loop)}
+addEventListener('resize',size);size();if(!still)loop();
+(function(){var b=$('bg'),g=b.getContext('2d'),P=[],w,h,d,mx=-999,my=-999;
+function init(){d=devicePixelRatio||1;w=innerWidth;h=innerHeight;b.width=w*d;b.height=h*d;g.setTransform(d,0,0,d,0,0);var n=Math.min(95,Math.round(w*h/17000));P=[];for(var i=0;i<n;i++)P.push({x:Math.random()*w,y:Math.random()*h,vx:(Math.random()-.5)*.35,vy:(Math.random()-.5)*.35,r:Math.random()*1.4+.7,k:Math.random()<.12})}
+addEventListener('pointermove',function(e){mx=e.clientX;my=e.clientY});
+function step(mv){g.clearRect(0,0,w,h);var a=v('--acc'),m=v('--amb'),L=130;
+P.forEach(function(p){if(mv){p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>w)p.vx*=-1;if(p.y<0||p.y>h)p.vy*=-1}});
+g.lineWidth=1;g.strokeStyle=a;
+for(var i=0;i<P.length;i++){var p=P[i];for(var j=i+1;j<P.length;j++){var q=P[j],dx=p.x-q.x,dy=p.y-q.y,dd=dx*dx+dy*dy;if(dd<L*L){g.globalAlpha=(1-Math.sqrt(dd)/L)*.28;g.beginPath();g.moveTo(p.x,p.y);g.lineTo(q.x,q.y);g.stroke()}}
+var ex=p.x-mx,ey=p.y-my,ed=ex*ex+ey*ey;if(ed<170*170){g.globalAlpha=(1-Math.sqrt(ed)/170)*.55;g.strokeStyle=m;g.beginPath();g.moveTo(p.x,p.y);g.lineTo(mx,my);g.stroke();g.strokeStyle=a}
+g.globalAlpha=p.k?.9:.5;g.fillStyle=p.k?m:a;g.beginPath();g.arc(p.x,p.y,p.k?p.r+.8:p.r,0,6.283);g.fill()}
+g.globalAlpha=1}
+function run(){step(1);requestAnimationFrame(run)}
+addEventListener('resize',function(){init();if(still)step(0)});$('theme').addEventListener('click',function(){if(still)setTimeout(function(){step(0)},50)});
+init();if(still)step(0);else run()})();
+(function(){var G=[{n:'EngineSpeed',s:0,l:16,f:.25,o:0,u:'rpm',r:12000},{n:'CoolantTemp',s:16,l:8,f:1,o:-40,u:'°C',r:130},{n:'ThrottlePos',s:24,l:8,f:.4,o:0,u:'%',r:88}],c=0,sg=$('sg'),bt=$('bits'),sl=$('cv2');
+function draw(){var by=[0,0,0,0,0,0,0,0],g=G[c],h='',y,x;G.forEach(function(q){for(var i=0;i<q.l;i++){if((q.r>>i)&1){var b=q.s+i;by[b>>3]|=1<<(b&7)}}});
+for(y=0;y<8;y++)for(x=7;x>=0;x--){var k=y*8+x;h+='<i class="bit'+((by[y]>>x)&1?' on':'')+(k>=g.s&&k<g.s+g.l?' sel':'')+'"></i>'}
+bt.innerHTML=h;$('hexo').textContent='0x1A0  '+by.map(function(v){return('0'+v.toString(16)).slice(-2).toUpperCase()}).join(' ');
+$('cvo').textContent=(g.r*g.f+g.o).toFixed(g.f<1?1:0)+' '+g.u+'  (0x'+g.r.toString(16).toUpperCase()+')'}
+function pick(i){c=i;sl.max=Math.pow(2,G[i].l)-1;sl.value=G[i].r;[].forEach.call(sg.children,function(b,j){b.setAttribute('aria-pressed',j===i)});draw()}
+G.forEach(function(g,i){var b=document.createElement('button');b.textContent=g.n;b.onclick=function(){pick(i)};sg.appendChild(b)});
+sl.oninput=function(){G[c].r=+sl.value;draw()};pick(0)})();
+$('cite').onclick=function(){var t='On the Quality of Experience of Content Sharing in Online Education and Online Meetings. Infocommunications Journal, Vol. XIV, No. 2, June 2022, pp. 73–84. DOI: 10.36244/ICJ.2022.2.8',o=$('cok'),done=function(){o.textContent=lg==='mn'?'Хуулсан':'Copied';setTimeout(function(){o.textContent=''},1800)};try{navigator.clipboard.writeText(t).then(done,function(){o.textContent=lg==='mn'?'Хуулж чадсангүй':'Copy blocked'})}catch(e){o.textContent='Copy blocked'}};
+/* i18n */
+var MN={'Senior system validation engineer':'Ахлах системийн баталгаажуулалтын инженер','01/2026 – now':'01/2026 – одоо','Senior System Validation Engineer':'Ахлах системийн баталгаажуулалтын инженер','Engineered robust object-oriented Python frameworks to automate complex ECU test sequences, significantly reducing manual validation cycles and increasing testing throughput.':'Нарийн төвөгтэй ECU туршилтын дарааллыг автоматжуулах бат бөх, объект хандлагат Python framework боловсруулж, гар аргаар хийх баталгаажуулалтын мөчлөгийг мэдэгдэхүйц багасгаж, туршилтын нэвтрүүлэх чадварыг нэмэгдүүлсэн.','Developed automation scripts utilizing Vector CASL (Calculation and Scripting Language) to streamline signal-oriented calculations, log data analysis, and validation workflows.':'Vector CASL (Calculation and Scripting Language) ашиглан дохионд суурилсан тооцоолол, лог өгөгдлийн шинжилгээ, баталгаажуулалтын ажлын урсгалыг хялбаршуулсан автоматжуулалтын скрипт хөгжүүлсэн.','Executed comprehensive automotive systems validation and signal analysis, translating complex functional requirements into reproducible, automated test scripts.':'Автомашины системийн иж бүрэн баталгаажуулалт, дохионы шинжилгээ хийж, нарийн төвөгтэй функциональ шаардлагыг давтагдах боломжтой автомат туршилтын скрипт болгон хөрвүүлсэн.','Collaborated cross-functionally to debug, analyze, and refine embedded ECU software performance against strict automotive standards.':'Олон чиглэлийн багуудтай хамтран суулгагдсан ECU програм хангамжийн гүйцэтгэлийг автомашины хатуу стандартын дагуу дебаг хийж, шинжилж, сайжруулсан.','Automotive and ECU':'Авто салбар ба ECU','CANape, CANoe, Vector CASL, FlexRay, CAN, ECU test automation, signal analysis, log data analysis, requirements-based validation, embedded ECU debugging':'CANape, CANoe, Vector CASL, FlexRay, CAN, ECU туршилтын автоматжуулалт, дохионы шинжилгээ, лог өгөгдлийн шинжилгээ, шаардлагад суурилсан баталгаажуулалт, суулгагдсан ECU-ийн дебаг','CH1 · signal under test':'CH1 · шалгагдаж буй дохио','Tushig':'Тушиг','Bat-Erdene':'Бат-Эрдэнэ','System validation engineer':'Системийн баталгаажуулалтын инженер','at thyssenkrupp Components Technology, Budapest. I build the tools and test infrastructure that prove automotive hardware meets its specification, and I research how to make deep learning models catch their own mistakes.':'(thyssenkrupp Components Technology, Будапешт). Автомашины техник хангамжийн техникийн шаардлагад нийцэж буйг батлах хэрэгсэл, туршилтын дэд бүтцийг бүтээдэг бөгөөд гүн сургалтын загварууд өөрсдийн алдааг өөрсдөө илрүүлдэг болгох судалгаа хийдэг.',
+'Time base':'Цагийн суурь','2 ms/div':'2 мс/хуваарь','Tolerance':'Хүлцэл','Standard':'Стандарт','Automotive':'Авто салбар','Verdict':'Дүгнэлт','PASS':'ТЭНЦСЭН',
+'Publication':'Нийтлэл','Peer-reviewed · Infocommunications Journal':'Хянан магадлагдсан · Infocommunications Journal','A study of how well shared content such as slides and screens comes across in online lessons and meetings, and how that experience can be measured.':'Онлайн хичээл, уулзалтад слайд, дэлгэц зэрэг хуваалцсан агуулга хэр сайн хүрч байгааг судалсан бөгөөд энэ туршлагыг хэрхэн хэмжиж болохыг авч үзсэн судалгаа.','Open paper (DOI)':'Нийтлэлийг нээх (DOI)','Journal':'Сэтгүүл','Volume':'Боть','Issue':'Дугаар','Date':'Огноо','Pages':'Хуудас','June 2022':'2022 оны 6-р сар',
+'Thesis':'Дипломын ажил','BME bachelor thesis':'Будапештийн Технологи, Эдийн засгийн их сургуулийн бакалаврын дипломын ажил','Out-of-Distribution Detection in Image Captioning based on Deep Learning':'Гүн сургалтад суурилсан зураг тайлбарлалт дахь тархалтаас гадуурх (OOD) өгөгдлийг илрүүлэх нь','Large captioning models sometimes describe things that are not in the image. I implemented ReCap (Refining Captions for Foundation Model-Based Image Captioning), which rejects out-of-distribution captions and replaces them with better alternatives.':'Том хэмжээний тайлбар үүсгэгч загварууд зарим үед зурагт байхгүй зүйлийг дүрсэлдэг. Би ReCap (суурь загварт тулгуурласан зургийн тайлбарыг сайжруулах арга) алгоритмыг хэрэгжүүлсэн бөгөөд энэ нь тархалтаас гадуурх тайлбарыг татгалзан, илүү сайн хувилбараар сольдог.','Select a stage to see what I built.':'Миний хийсэн зүйлийг харахын тулд шатыг сонгоно уу.',
+'The problem':'Асуудал','Large foundation-model captioners can write captions that do not match what is in the image. These out-of-distribution (OOD) captions look fluent, so they are hard to spot.':'Том суурь загварт тулгуурласан тайлбар үүсгэгчид зурагтай нийцэхгүй тайлбар бичих тохиолдол гардаг. Эдгээр тархалтаас гадуурх (OOD) тайлбар нь бодит мэт сонсогддог тул анзаарахад хэцүү.','The idea':'Санаа','Softmax probability only reflects how the model ranks its own words. A CLIP similarity score compares the caption with the image directly, so it can flag a caption that does not belong.':'Softmax магадлал нь загвар өөрийн үгсийг хэрхэн эрэмбэлж буйг л харуулдаг. CLIP ижил төстэй байдлын оноо нь тайлбарыг зурагтай шууд харьцуулдаг тул зохисгүй тайлбарыг тэмдэглэж чадна.','What I delivered':'Миний хийсэн зүйл','An OOD benchmark built with Stable Diffusion-based models, large captioners integrated into the pipeline, a CLIP-based scoring solution, and the ReCap reject-and-replace algorithm.':'Stable Diffusion загварт суурилсан OOD туршилтын өгөгдлийн сан, дамжуулалтад нэгтгэсэн том тайлбар үүсгэгч загварууд, CLIP-д суурилсан оноолтын шийдэл, мөн ReCap татгалзаж-сольдог алгоритм.',
+'Try the gate':'Хаалгыг турших','Illustrative image and scores, not results from the thesis.':'Энэ зураг, оноо нь жишээ зорилготой бөгөөд дипломын ажлын үр дүн биш.','CLIP threshold':'CLIP босго','Input image: a dog running on a beach':'Оролтын зураг: далайн эрэг дээр гүйж буй нохой','Candidate captions from the model':'Загварын санал болгосон тайлбарууд','Score distributions (illustrative)':'Онооны тархалт (жишээ)','Threshold trade-off (illustrative)':'Босгоны солилцоо (жишээ)',
+'Event log':'Ажлын түүх','09/2024 – now':'09/2024 – одоо','System Validation Engineer':'Системийн баталгаажуулалтын инженер','thyssenkrupp Components Technology Hungary · Budapest':'thyssenkrupp Components Technology Hungary · Будапешт','Develop and maintain reusable scripts and tools for system verification and validation.':'Системийн шалгалт, баталгаажуулалтад ашиглах дахин ашиглагдах скрипт, хэрэгслийг хөгжүүлж, засварладаг.','Co-architect the test infrastructure system.':'Туршилтын дэд бүтцийн системийг хамтран зохиомжилдог.','Run hardware and system-level testing against customer specifications to automotive quality standards.':'Автомашины чанарын стандартын дагуу захиалагчийн шаардлагад тулгуурлан техник хангамж болон системийн түвшний туршилт хийдэг.',
+'Software Engineering Intern':'Програм хангамжийн инженерийн дадлагажигч','Built Python tools used by the whole hardware department, tuned for large measurement files.':'Техник хангамжийн хэлтсийн бүх инженерийн ашигладаг, том хэмжилтийн файлд тохируулсан Python хэрэгсэл бүтээсэн.','Led the Python 2 to Python 3 migration of engineering tools with minimal disruption for users.':'Инженерийн хэрэгслүүдийг Python 2-оос Python 3 руу хэрэглэгчдэд хамгийн бага саадтай шилжүүлэх ажлыг удирдсан.','Introduced test-driven development to the hardware engineering team.':'Техник хангамжийн инженерийн багт тест хөтлөгдсөн хөгжүүлэлтийг нэвтрүүлсэн.','Developing a centralized GitLab package repository for uniform dependencies.':'Багуудын хамаарлыг нэг стандартад оруулах GitLab-ийн төвлөрсөн багцын агуулахыг хөгжүүлж байна.',
+'CMS Developer':'Контент удирдлагын системийн хөгжүүлэгч','Nomun Khet LLC · Ulaanbaatar, Mongolia':'Номун Хэт ХХК · Улаанбаатар, Монгол','Integrated third-party APIs and plugins into websites.':'Гуравдагч талын API болон плагиныг вэбсайтад нэгтгэсэн.','Extended e-commerce, payments, SEO and social features through plugin customization.':'Плагин өөрчлөлтөөр цахим худалдаа, төлбөрийн гарц, SEO, нийгмийн сүлжээний боломжийг өргөтгөсөн.',
+'Toolchain':'Хэрэгслийн багц','Languages':'Хэлүүд','Infrastructure':'Дэд бүтэц','Tooling and data':'Хэрэгсэл ба өгөгдөл','Deep learning':'Гүн сургалт','Education':'Боловсрол','B.Sc. Computer Engineering, Infocommunication specialization':'Компьютерийн инженерийн бакалавр, мэдээлэл-харилцаа холбооны чиглэл','Budapest University of Technology and Economics, 2020–2024':'Будапештийн Технологи, Эдийн засгийн их сургууль, 2020–2024','Honours':'Шагнал, урамшуулал','Stipendium Hungaricum Scholarship':'Stipendium Hungaricum тэтгэлэг','Allianz Technology Hungary Tech Championship Award':'Allianz Technology Hungary-ийн Tech Championship шагнал','IDEAHACK 2020, WHU hackathon':'IDEAHACK 2020, WHU хакатон','Send signal':'Дохио илгээх','Budapest, Hungary':'Будапешт, Унгар'};
+var SM=[['Туршилтын өгөгдөл','Stable Diffusion загварт суурилсан, тархалтаас гадуурх тохиолдлыг хэмжих нарийн төвөгтэй өгөгдлийн сан бэлтгэсэн.'],['Тайлбар үүсгэх','Үүсгэсэн тайлбарын чанар, уялдааг сайжруулахын тулд анх GIT зэрэг том зураг-тайлбар загваруудыг нэгтгэсэн.'],['Оноолт','Softmax магадлалд найдахын оронд зураг-тайлбарын хосыг CLIP ижил төстэй байдлын оноогоор үнэлсэн.'],['Татгалзах ба солих','ReCap тархалтаас гадуурх тайлбарыг татгалзаж, илүү сайн хувилбараар сольж, тайлбарыг зурагтай харааны хувьд уялдаатай байлгадаг.'],['Сегментчилэл (үргэлжилж байна)','Зураг доторх объектыг ялгах сегментчилэх загваруудыг нэгтгэж, тайлбарын холбогдох элементүүдийг токенжуулан зураг-тайлбарын тохирлыг илүү нарийвчилж байна.']];
+var MN2={'Senior system':'Системийн баталгаажуулалтын ахлах инженер','Senior System':'Системийн баталгаажуулалтын ахлах инженер','at thyssenkrupp':'— Будапешт хот дахь "thyssenkrupp Components Technology" компанид Системийн баталгаажуулалтын ахлах инженерээр ажилладаг. Автомашины техник хангамжийн шаардлагыг хангах туршилтын дэд бүтэц болон автоматжуулалтын хэрэгслийг хөгжүүлдэг. Үүний зэрэгцээ Deep Learning загварууд өөрийн алдааг бие даан илрүүлэх аргуудыг судалж байна','Peer-reviewed':'Шинжээчид хянасан · Infocommunications Journal','A study of':'Онлайн хичээл, уулзалтын үеэр слайд, дэлгэц зэргийг хуваалцахад үзэгчид ямар туршлага авдагийг, мөн тэр туршлагыг хэрхэн хэмжихийг судалсан ажил.','Open paper':'Өгүүллийг унших (DOI)','Copy citation':'Эшлэл хуулах','BME bachelor':'Будапештийн Технологи, Эдийн засгийн их сургууль · бакалаврын дипломын ажил','Out-of-Distribution Detection':'Гүн сургалтад суурилсан зургийн тайлбар үүсгэх загварт тархалтаас гадуурх (OOD) тайлбарыг илрүүлэх нь','Large captioning':'Зургийн тайлбар бичдэг том загварууд заримдаа зурган дээр огт байхгүй зүйлийг дүрслэдэг. Би ReCap (суурь загварт тулгуурласан зургийн тайлбарыг шүүж сайжруулах арга) алгоритмыг хэрэгжүүлсэн. Энэ нь зурагт тохирохгүй, тархалтаас гадуурх тайлбарыг хаяж, оронд нь илүү тохирсоныг сонгдог.','Select a stage':'Аль үе шатад юу хийснийг харахын тулд шатыг товшино уу.','Large foundation':'Том суурь загварт тулгуурласан тайлбар үүсгэгчид зурагт тохирохгүй тайлбар бичих тохиолдол бий. Ийм тайлбар уншихад зөв мэт санагддаг тул илрүүлэхэд хэцүү.','Softmax probability':'Softmax магадлал нь загвар өөрийн гаргасан үгсээ хэр эрэмбэлснийг л илэрхийлдэг. CLIP-ийн ижил төстэй байдлын оноо тайлбар болон зургийг шууд харьцуулдаг тул зурагт үл хамаарах тайлбарыг илрүүлж чадна.','An OOD benchmark':'Stable Diffusion загваруудаар бүтээсэн OOD туршилтын өгөгдлийн багц, тайлбар үүсгэдэг том загваруудын нэгдсэн дамжуулалт, CLIP-д суурилсан оноолтын шийдэл, ReCap-ийн «хаях ба солих» алгоритм.','Try the gate':'Шүүлтүүрийг туршиж үзэх','Illustrative image':'Энэ зураг, оноонууд нь жишээ бөгөөд дипломын ажлын бодит үр дүн биш.','CLIP threshold':'CLIP-ийн босго','Input image':'Оролтын зураг: далайн эрэг дээр гүйж буй нохой','Candidate captions':'Загварын гаргасан тайлбарууд','Threshold trade-off':'Босгоны нөлөө (жишээ)','Develop and maintain':'Системийн шалгалт, баталгаажуулалтад ашиглах, дахин ашиглах боломжтой скрипт, хэрэгслүүдийг хөгжүүлж, засвар үйлчилгээ хийдэг.','Co-architect':'Туршилтын дэд бүтцийн системийн архитектурыг хамтран зохион бүтээдэг.','Run hardware':'Захиалагчийн техникийн шаардлагын дагуу, автомашины чанарын стандартад нийцүүлэн техник хангамж болон системийн түвшний туршилт хийдэг.','Engineered robust':'ECU-ийн нарийн төвөгтэй туршилтын дарааллыг автоматжуулах найдвартай, объект хандлагат Python framework бүтээж, гараар хийдэг баталгаажуулалтын хугацааг эрс багасгаж, туршилтын хүчин чадлыг нэмэгдүүлсэн.','Developed automation':'Vector CASL (Calculation and Scripting Language) хэлээр автоматжуулалтын скрипт бичиж, дохионд суурилсан тооцоолол, лог өгөгдлийн шинжилгээ, баталгаажуулалтын ажлын урсгалыг хөнгөвчилсөн.','Executed comprehensive':'Автомашины системийн баталгаажуулалт, дохионы шинжилгээг иж бүрнээр гүйцэтгэж, функциональ шаардлагуудыг давтан ажиллуулах боломжтой автомат туршилтын скрипт болгон хөрвүүлсэн.','Collaborated cross':'Бусад чиглэлийн багуудтай хамтран, суулгагдсан ECU программ хангамжийн гүйцэтгэлийг автомашины хатуу стандартад нийцүүлэн алдаа засаж, шинжилж, сайжруулсан.','Software Engineering':'Программ хангамжийн инженер, дадлагжигч','Built Python':'Техник хангамжийн хэлтсийн бүх инженерийн ашигладаг Python хэрэгслүүдийг бүтээж, том хэмжээний хэмжилтийн файлыг хурдан боловсруулдаг болгосон.','Led the Python':'Инженерийн хэрэгслүүдийг Python 2-оос Python 3 руу шилжүүлэх ажлыг удирдаж, хэрэглэгчдэд хамгийн бага саад учруулсан.','Introduced test-driven':'Техник хангамжийн инженерийн багт тестэд суурилсан хөгжүүлэлтийг (TDD) нэвтрүүлсэн.','Developing a centralized':'Багуудын хамаарлыг нэг мөр болгох зорилгоор GitLab дээр төвлөрсөн багцын сан хөгжүүлж байна.','CMS Developer':'Контент удирдах системийн хөгжүүлэгч','Integrated third-party':'Гуравдагч талын API, плагинуудыг вэбсайтад холбож, нэгтгэсэн.','Extended e-commerce':'Плагиныг тохируулан цахим худалдаа, төлбөрийн систем, SEO, нийгмийн сүлжээний боломжуудыг өргөжүүлсэн.','Toolchain':'Хэрэгслүүд','Automotive and ECU':'Автомашин ба ECU','CANape, CANoe':'CANape, CANoe, Vector CASL, FlexRay, CAN, ECU туршилтын автоматжуулалт, дохионы шинжилгээ, лог өгөгдлийн шинжилгээ, шаардлагад суурилсан баталгаажуулалт, ECU-ийн суулгагдсан программын дебаг','Languages':'Програмчлалын хэл','Tooling and data':'Хэрэгсэл, өгөгдөл','B.Sc.':'Компьютерийн инженерийн бакалавр (мэдээлэл холбооны чиглэл)','Honours':'Шагнал, амжилт','Allianz':'Allianz Technology Hungary: Tech Championship шагнал','IDEAHACK':'IDEAHACK 2020 (WHU-ийн хакатон)','Send signal':'Холбоо барих','CAN frame decoder':'CAN фрейм задлах','Illustrative frame':'Жишээ фрейм, Intel (little-endian) байтын дараалал. Дохиогоо сонгоод гулсуулагчийг хөдөлгөнө үү.'};
+function tr(t){for(var k in MN2)if(t.indexOf(k)===0)return MN2[k];return MN[t]}
+SM=[['Туршилтын өгөгдөл','Stable Diffusion загваруудыг ашиглан тархалтаас гадуурх тохиолдлыг хэмжих боломжтой, нарийн төвөгтэй өгөгдлийн багц бэлтгэсэн.'],['Тайлбар үүсгэх','Тайлбарын чанар, уялдааг сайжруулахын тулд зургийн тайлбар үүсгэдэг том загваруудыг (эхлээд GIT) системд холбосон.'],['Оноолт','Softmax магадлалд найдахын оронд зураг, тайлбарын хосыг CLIP-ийн ижил төстэй байдлын оноогоор үнэлэх шийдэл боловсруулсан.'],['Хаях ба солих','ReCap нь тархалтаас гадуурх тайлбарыг хаяж, оронд нь илүү тохирохыг сонгосноор тайлбар зурагтайгаа харааны хувьд нийцэж байхыг хангадаг.'],['Сегментчилэл (үргэлжилж байна)','Зураг дээрх объектуудыг ялгах сегментчлэлийн загваруудыг нэмж холбож, тайлбарын холбогдох үгстэй тулгаснаар зураг-тайлбарын тохироог илүү нарийвчилж байна.']];
+var nodes=[],wk=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,null);
+while(wk.nextNode()){var nd=wk.currentNode,tx=nd.nodeValue.trim();if(tx&&tr(tx))nodes.push([nd,nd.nodeValue,tx])}
+function setLang(l,save){lg=l;nodes.forEach(function(a){a[0].nodeValue=l==='mn'?a[1].replace(a[2],tr(a[2])):a[1]});R.lang=l;S=l==='mn'?SM:SE;build();gate();charts();var lb=$('lang');lb.textContent=l==='mn'?'EN':'МН';lb.setAttribute('aria-label',l==='mn'?'Switch to English':'Монгол хэл рүү шилжих');if(save){try{localStorage.setItem('lang',l)}catch(e){}}}
+$('lang').onclick=function(){setLang(lg==='mn'?'en':'mn',1)};
+var sv=null;try{sv=localStorage.getItem('lang')}catch(e){}
+if((sv||((navigator.language||'').slice(0,2)==='mn'?'mn':'en'))==='mn')setLang('mn');
+})();
+</script>
+</body>
+</html>
